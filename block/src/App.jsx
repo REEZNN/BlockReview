@@ -1,10 +1,12 @@
-import './App.css'
+import "./App.css";
+import Menu from "./Menu.jsx";
 
 function App() {
-
   return (
-    <><h1>hola mundo</h1></>
-  )
+    <div className="contenedorApp">
+      <Menu />
+    </div>
+  );
 }
 
-export default App
+export default App;

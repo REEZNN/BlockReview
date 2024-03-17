@@ -1,0 +1,37 @@
+.contenedor-producciones{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    display: block;
+    padding: 0.2rem;
+    margin-right: 0.5rem;
+    block-size: 100%;
+}
+.contenedor-producciones ul{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.2rem;
+    block-size: 100%;
+    cursor: pointer;
+}
+.titulo-producciones{
+    color: #fff;
+}
+.moviecard{/*clase*/
+    color: #fff;
+    display: block;
+}
+.moviecard img{
+    width: 13%;
+    border-radius: 0.3rem;
+}
+.margen-caja{
+    margin: 0rem 2rem;
+}
+.titulo-produccion{
+    width: fit-content;
+}

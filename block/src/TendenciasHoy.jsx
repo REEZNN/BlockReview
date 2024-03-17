@@ -1,6 +1,7 @@
 import "./Css/TendenciasHoy.css";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import MovieCard from "./MovieCard";
 
 const TendenciasHoy = () => {
   const [tendencias, setTendencias] = useState(null);
@@ -38,7 +39,15 @@ const TendenciasHoy = () => {
 
   return (
     <div>
-      <h2 className="">Tendencias Hoy</h2>
+      <h2 className="titulo-producciones">Tendencias Hoy</h2>
+
+      <div className="contenedor-producciones">
+        <ul>
+          {tendencias.map((parametro) => (
+            <MovieCard key={parametro.id} {...parametro}/>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

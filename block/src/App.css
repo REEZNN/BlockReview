@@ -39,3 +39,10 @@ body{
 #menu input{
   margin-right: 1rem;
 }
+
+#banner p{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+
+}

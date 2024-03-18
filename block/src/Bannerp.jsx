@@ -3,9 +3,8 @@ import "./App.css";
 const Bannerp = () => {
   return (
     <div id="banner" className="bannertop">
-      
       <p>¡Todo sobre tus series y películas favoritas en un solo lugar!</p>
-      <img src="src\assets\fondoheader2.png"></img>
+      <img  src="src\assets\fondoheader2.png"></img>
     </div>
   );
 };

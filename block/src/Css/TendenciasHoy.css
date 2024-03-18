@@ -1,37 +1,47 @@
 .contenedor-producciones{
-    width: 100%;
-    color: rgb(255, 255, 255);
-    margin-bottom: 2rem;
-    display: block;
-    padding: 0.2rem;
-    margin-right: 0.5rem;
-    block-size: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    min-height: 70vh;
+    margin: auto;
+    justify-content: center;
 }
-.contenedor-producciones ul{
-    width: 100%;
-    color: rgb(255, 255, 255);
-    margin-bottom: 2rem;
-    display: block;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0.2rem;
-    block-size: 100%;
-    cursor: pointer;
-}
+
 .titulo-producciones{
-    color: #fff;
+    
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 70%;
+    margin: 0 auto;
+    font-size: large;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    color: white;
+    padding-left: 7rem;
 }
+
 .moviecard{/*clase*/
     color: #fff;
-    display: block;
+    display: flex;
+    margin: 0rem 1rem 2rem 1rem;
+    flex-direction: column;
+    width: 16%;
 }
 .moviecard img{
-    width: 13%;
+    width: 180px;
+    height: 270px;
     border-radius: 0.3rem;
 }
-.margen-caja{
-    margin: 0rem 2rem;
-}
 .titulo-produccion{
-    width: fit-content;
+    width: 100%;
+    margin-top: 1rem;
+    overflow: auto; /* Esto permite que el texto se desplace verticalmente si es demasiado largo */
+}
+
+.container{
+    
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    max-width: 70%;    
 }

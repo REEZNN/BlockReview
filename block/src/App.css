@@ -63,4 +63,8 @@ body{
 }
 .bannertop{
   margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

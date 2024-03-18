@@ -38,16 +38,15 @@ const TendenciasHoy = () => {
   }
 
   return (
-    <div className="margen-caja">
+    <div id="tendencia" className="container">
       <h2 className="titulo-producciones">Tendencias Hoy</h2>
 
       <div className="contenedor-producciones">
         
-          <ul>
             {tendencias.map((parametro) => (
               <MovieCard key={parametro.id} {...parametro} />
             ))}
-          </ul>
+        
     
       </div>
     </div>

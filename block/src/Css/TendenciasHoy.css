@@ -1,9 +1,9 @@
 .contenedor-producciones{
-    display: flex;
-    flex-wrap: wrap;
-    width: 70%;
-    min-height: 70vh;
-    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    
+    gap: 40px;
+    padding: 40px;
     justify-content: center;
 }
 
@@ -22,10 +22,7 @@
 
 .moviecard{/*clase*/
     color: #fff;
-    display: flex;
-    margin: 0rem 1rem 2rem 1rem;
-    flex-direction: column;
-    width: 16%;
+    list-style: none;
 }
 .moviecard img{
     width: 180px;
@@ -40,8 +37,6 @@
 
 .container{
     
-    display: contents;
-    justify-content: center;
-    align-items: center;
-    max-width: 70%;    
+    display: grid;
+    align-items: center;    
 }

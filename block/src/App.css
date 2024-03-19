@@ -11,37 +11,6 @@ body{
   display: flex;
   justify-content: center;
 }
-  
-/*MENU*/
-.menuprincipal{
-  display: flex;
-  justify-content: center;
-  padding: 1rem 2rem;
-  background-color: #00314c;
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-}
-
-#menu h1{
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 0.3rem;
-  padding: 1rem;
-  font-weight: 400;
-  font-size: 1rem;
-  color: #fff;
-}
-#menu form{
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-}
-#menu input{
-  margin-right: 1rem;
-}
 
 #banner p{/*id*/
   color: #fff;
@@ -49,18 +18,7 @@ body{
   justify-content: center;
 
 }
-#menu img{
-  padding: 0rem 0.5rem 0rem;
-  width: 180px;
-  padding-bottom: 0.4rem;
-}
-.contenedor1{
-  
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin-top: 0.3rem;
-}
+
 .bannertop{
   margin-top: 120px;
   display: flex;

@@ -12,7 +12,7 @@ const Menu = () => {
   };
 
   return (
-    <header className="contenedorheader">
+    <header className="contenedorheader">{/*etiqueta*/}
       <nav className="topnav">
         <a href="#" className="logo">
           <img src="src\assets\logo1x.png" alt="Logo" />

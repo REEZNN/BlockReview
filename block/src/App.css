@@ -12,17 +12,3 @@ body{
   justify-content: center;
 }
 
-#banner p{/*id*/
-  color: #fff;
-  display: flex;
-  justify-content: center;
-
-}
-
-.bannertop{
-  margin-top: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}

@@ -1,10 +1,23 @@
-.contenedor-producciones{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
-    
+.contenedor-tendenciashoy{
+    box-sizing: content-box;
+    width: 100%;
+}
+.contenedor-tendenciashoy h2{
+    color: #fff;
+    width: auto;
+    margin: 0rem 0rem 2rem 0rem;
+    padding-left: 4rem;
+}
+
+
+.contenedor-producciones{ /*el que contiene todas la movie card*/
+    display: flex;
     gap: 40px;
-    padding: 40px;
     justify-content: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin: 1rem 0rem;
+    padding: 0;
 }
 
 .titulo-producciones{
@@ -23,6 +36,7 @@
 .moviecard{/*clase*/
     color: #fff;
     list-style: none;
+    max-width: 240px;
 }
 .moviecard img{
     width: 180px;
@@ -30,7 +44,7 @@
     border-radius: 0.3rem;
 }
 .titulo-produccion{
-    width: 100%;
+    max-width: 180px;
     margin-top: 1rem;
     overflow: auto; /* Esto permite que el texto se desplace verticalmente si es demasiado largo */
 }
@@ -40,3 +54,4 @@
     display: grid;
     align-items: center;    
 }
+

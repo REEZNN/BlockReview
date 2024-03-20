@@ -1,10 +1,11 @@
-import "./Css/TendenciasHoy.css";
+import { useState } from "react";
+import "./Css/Encines.css";
+import { useEffect } from "react";
 import axios from "axios";
-import { useEffect, useState } from "react";
 import MovieCard from "./MovieCard";
 
-const TendenciasHoy = () => {
-  const [tendencias, setTendencias] = useState(null);
+const Encines = () => {
+  const [encines, setEncines] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -17,15 +18,15 @@ const TendenciasHoy = () => {
 
     axios
       .get(
-        "https://api.themoviedb.org/3/trending/all/day?api_key=2da173810187d9446d4b38d39c6e1569",
+        "https://api.themoviedb.org/3/movie/now_playing?api_key=2da173810187d9446d4b38d39c6e1569",
         options
       )
       .then((response) => {
-        setTendencias(response.data.results);
-        //console.log(response.data.results); ver en console 
+        setEncines(response.data.results);
+        console.log(response.data.results);
       })
       .catch(() => {
-        setError("Hubo un error al cargar las Tendencias de Hoy");
+        setError("hubo un error al cargar las peliculas en el cine");
       });
   }, []);
 
@@ -33,20 +34,20 @@ const TendenciasHoy = () => {
     return <h2 className="title">{error}</h2>;
   }
 
-  if (!tendencias) {
+  if (!encines) {
     return <h2 className="title">Cargando Tendencias de Hoy...</h2>;
   }
 
   return (
-    <div className="contenedor-tendenciashoy">
-      <h2>Tendencias hoy</h2>
+    <div className="contenedor-encinessuperior">
+      <h2>Estreno en cines</h2>
 
-      <ul className="contenedor-producciones">
-        {tendencias.map((parametro) => (
+      <ul className="contenedor-encines">
+        {encines.map((parametro) => (
           <MovieCard key={parametro.id} {...parametro} />
         ))}
       </ul>
     </div>
   );
 };
-export default TendenciasHoy;
+export default Encines;

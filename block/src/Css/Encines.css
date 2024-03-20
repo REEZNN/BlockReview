@@ -1,0 +1,23 @@
+.contenedor-encinessuperior {
+    background-color: black;
+    max-width: 1200px;
+    padding-top: 0.5rem;
+    border-radius:2rem ;
+}
+
+
+.contenedor-encinessuperior h2 {
+    color: #fff;
+    padding-left: 4rem;
+
+}/*conetendor superior*/
+
+.contenedor-encines {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 1rem 0rem;
+    padding: 0;
+    justify-content: center;
+}
